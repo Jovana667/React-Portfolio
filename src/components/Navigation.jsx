@@ -2,12 +2,12 @@ import React from "react";
 
 const Navigation = ({ currentPage, setCurrentPage }) => {
   return (
-    <nav>
+    <nav className="nav-links">
       {["About", "Portfolio", "Contact", "Resume"].map((page) => (
         <button
           key={page}
           onClick={() => setCurrentPage(page)}
-          style={{ fontWeight: currentPage === page ? "bold" : "normal" }}
+          className="nav-button"
         >
           {page}
         </button>

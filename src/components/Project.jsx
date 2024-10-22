@@ -1,12 +1,14 @@
 import React from "react";
 
-const Project = ({ title, image, deployedLink, githubLink }) => {
+const Project = ({ title, image, githubLink }) => {
   return (
-    <div>
-      <h3>{title}</h3>
-      <img src={image} alt={title} />
-      <a href={deployedLink}>Deployed Application</a>
-      <a href={githubLink}>GitHub Repository</a>
+    <div className="project-card">
+      <a href={githubLink} target="_blank" rel="noopener noreferrer">
+        <img src={image} alt={title} className="project-image" />
+        <div className="project-overlay">
+          <h3 className="project-title">{title}</h3>
+        </div>
+      </a>
     </div>
   );
 };
