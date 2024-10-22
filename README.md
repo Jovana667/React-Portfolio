@@ -1,7 +1,7 @@
 # React-Portfolio
 
 ## Description
-A modern, responsive portfolio website built with React and Vite, showcasing my web development projects and professional experience. The site features a clean, intuitive interface with sections for About Me, Portfolio, Contact, and Resume.
+A modern, responsive portfolio website built with React and Vite, showcasing my web development projects and professional experience. The site features a clean interface with sections for About Me, Portfolio, Contact, and Resume.
 
 ## Table of Contents
 - [Features](#features)
@@ -18,7 +18,6 @@ A modern, responsive portfolio website built with React and Vite, showcasing my 
 - Contact form for professional inquiries
 - Downloadable resume and skills section
 - Links to GitHub, LinkedIn, and Stack Overflow profiles
-- Clean and modern user interface with a professional color scheme
 
 ## Technologies Used
 - React
@@ -34,41 +33,30 @@ A modern, responsive portfolio website built with React and Vite, showcasing my 
 To run this portfolio locally:
 
 1. Clone the repository:
-```bash
 git clone https://github.com/Jovana667/React-Portfolio.git
-```
 
-2. Navigate to the project directory:
-```bash
-cd React-Portfolio
-```
-
-3. Install dependencies:
-```bash
+2. Install dependencies:
 npm install
-```
 
 4. Start the development server:
-```bash
 npm run dev
-```
 
 5. Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
 ## Usage
-The portfolio is organized into several sections:
+The portfolio is organized into four sections:
 
 - **About Me**: Professional introduction and background
-- **Portfolio**: Showcases projects with links to deployed applications and GitHub repositories
-- **Contact**: A form to send me messages directly
-- **Resume**: Downloadable resume and list of proficiencies
+- **Portfolio**: A select few of my projects with links to their GitHub repositories
+- **Contact**: A form to send me a message directly
+- **Resume**: Downloadable resume and list of my proficiencies
 
 ## Screenshots
-![Portfolio Homepage](/path-to-screenshot.png)
-(Add actual screenshots of your application here)
+![1 (1)](https://github.com/user-attachments/assets/d23a6049-0f30-48af-9f64-89d1b8d0b668)
+![1 (2)](https://github.com/user-attachments/assets/9c5ee2b3-3dd7-49bc-b173-844049fcbde2)
 
 ## Deployed Application
-View the live application: [React Portfolio](https://your-portfolio-url.netlify.app)
+View the live application: https://jovanareactportfolio.netlify.app
 
 ## Projects Featured
 1. **Student Search Engine**
@@ -85,9 +73,7 @@ View the live application: [React Portfolio](https://your-portfolio-url.netlify.
 
 
 ## Contact
-- GitHub: [Jovana667](https://github.com/Jovana667)
-- LinkedIn: [Jovana Vukovic](https://www.linkedin.com/in/jovana-vukovic-337592279/)
-- Stack Overflow: [Jovana Vukovic](https://stackoverflow.com/users/27922248/jovana-vukovic)
+If you have any questions feel free open an issue and you can find more of my work at Jovana667(https://github.com/Jovana667).
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
