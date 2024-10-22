@@ -72,16 +72,16 @@ View the live application: [React Portfolio](https://your-portfolio-url.netlify.
 
 ## Projects Featured
 1. **Student Search Engine**
-   - GitHub: [Repository](https://github.com/Jovana667/student-search-engine)
+   - Click here (https://github.com/Jovana667/student-search-engine)
 
 2. **Weather Dashboard**
-   - GitHub: [Repository](https://github.com/Jovana667/Weather-Dashboard)
+   - Click here (https://github.com/Jovana667/Weather-Dashboard)
 
 3. **Employee Payroll Tracker**
-   - GitHub: [Repository](https://github.com/Jovana667/Employee-Payroll-Tracker)
-   - 
+   - Click here (https://github.com/Jovana667/Employee-Payroll-Tracker)
+     
 4. **Task Board Management Tool**
-   - GitHub: [Repository](https://github.com/Jovana667/Task-Board-Management-Tool)
+   - Click here (https://github.com/Jovana667/Task-Board-Management-Tool)
 
 
 ## Contact
