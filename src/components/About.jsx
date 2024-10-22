@@ -17,8 +17,8 @@ const About = () => {
       <p className="bio-text">
         Hello! I'm a 25-year-old aspiring developer based in Sydney, Australia.
         Currently, I'm pursuing my passion for full-stack development through
-        studies at the University of Sydney, where I'll be starting my journey
-        in May 2024.
+        studies at the University of Sydney, where I have begun my journey in
+        May 2024.
       </p>
       <p className="bio-text">
         I've developed competency across various front-end and back-end
