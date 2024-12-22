@@ -1,37 +1,43 @@
-import React, { useState } from "react";
+import React from "react";
 import Navigation from "./components/Navigation";
+import Home from "./components/Home";
 import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
+import Work from "./components/Work";
 import Resume from "./components/Resume";
+import Contact from "./components/Contact";
 
-const App = () => {
-  const [currentPage, setCurrentPage] = useState("About");
-
-  const renderPage = () => {
-    switch (currentPage) {
-      case "About":
-        return <About />;
-      case "Portfolio":
-        return <Portfolio />;
-      case "Contact":
-        return <Contact />;
-      case "Resume":
-        return <Resume />;
-      default:
-        return <About />;
-    }
-  };
-
+function App() {
   return (
-    <div className="app-container">
-      <header className="main-header">
-        <h1>Jovana</h1>
-        <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      </header>
-      <main>{renderPage()}</main>
+    <div className="relative">
+      <Navigation />
+
+      <main className="pt-16">
+        {" "}
+        {/* Home Section */}
+        <section id="home" className="min-h-screen">
+          <Home />
+        </section>
+        {/* About Section */}
+        <section
+          id="about"
+          className="min-h-screen bg-slate-600 text-cream-100"
+        >
+          <About />
+        </section>
+        {/* Portfolio Section */}
+        <section id="work" className="min-h-screen bg-slate-700 text-cream-100">
+          <Work />
+        </section>
+        {/* Contact Section */}
+        <section
+          id="contact"
+          className="min-h-screen bg-slate-700 text-cream-100"
+        >
+          <Contact />
+        </section>
+      </main>
     </div>
   );
-};
+}
 
 export default App;
