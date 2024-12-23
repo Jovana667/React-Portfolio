@@ -257,6 +257,135 @@ nav {
   transform: translateY(-2px);
 }
 
+/* About Section Styles */
+.about-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.content-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 6rem;
+}
+
+.main-content {
+  max-width: 800px;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--color-dark);
+}
+
+.intro-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--color-dark);
+}
+
+.location-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  color: var(--color-dark);
+}
+
+.about-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  background-color: #f26419;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #f6ae2d;
+}
+
+/* Skills Section */
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.skill-item {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #f6ae2d;
+}
+
+.skill-item:last-child {
+  background-color: #55dde0;
+}
+
+.skill-item h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-dark);
+}
+
+.skill-item p {
+  color: var(--color-dark);
+  line-height: 1.6;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.social-icon {
+  color: var(--color-dark);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon.github:hover {
+  color: #55dde0;
+  transform: translateY(-2px);
+}
+
+.social-icon.linkedin:hover {
+  color: #33658a;
+  transform: translateY(-2px);
+}
+
+.social-icon.resume:hover {
+  color: #f26419;
+  transform: translateY(-2px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .skills-section {
+    grid-template-columns: 1fr;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .intro-text,
+  .location-text {
+    font-size: 1.1rem;
+  }
+}
+
 /* Project Section */
 .project-card-container {
   width: 100%;
