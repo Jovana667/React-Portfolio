@@ -94,80 +94,109 @@ nav {
 .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 4rem;
+  padding-top: 2.5rem;
 }
 
-/* Card Layout Styles */
-.cards-layout {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem 0;
-}
-
-/* Main Card */
-.main-card {
+/* Main Hero Card */
+.main-hero-card {
   border-radius: 2rem;
-  padding: 4rem;
+  padding: 2rem;
   position: relative;
   overflow: hidden;
+  margin-bottom: 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.main-card .hero-title {
+.card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
   font-size: 3.5rem;
   line-height: 1.2;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  position: relative;
-  z-index: 2;
-}
-
-.main-card .hero-subtitle {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  max-width: 600px;
-  position: relative;
-  z-index: 2;
-}
-
-/* Card Grid */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
-/* Feature Cards */
-.feature-card {
-  border-radius: 2rem;
-  padding: 3rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.feature-card h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-/* Details Card */
-.details-card {
-  border-radius: 2rem;
-  padding: 3rem;
-  position: relative;
-  overflow: hidden;
   color: white;
 }
 
-/* CTA Card */
-.cta-card {
-  border-radius: 2rem;
-  padding: 3rem;
-  position: relative;
-  overflow: hidden;
+.hero-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.features {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.feature-highlight {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.feature-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.coral {
+  background-color: #f26419;
+}
+.turquoise {
+  background-color: #55dde0;
+}
+
+.cta-text {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* Info Cards Grid */
+.info-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-card {
+  padding: 1rem;
+  border-radius: 1rem;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-dark);
+}
+
+.info-card p {
+  color: var(--color-dark);
+  line-height: 1.6;
 }
 
 /* Background Colors */

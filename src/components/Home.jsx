@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="content-wrapper">
-        {/* Combined Card */}
-        <div className="combined-card bg-slate">
+        {/* Main Hero Card */}
+        <div className="main-hero-card bg-slate">
           <div className="card-content">
             <h1 className="hero-title">
               Crafting Digital Solutions That Make an Impact
@@ -40,6 +40,32 @@ const Home = () => {
             </button>
           </div>
           <div className="shape-accent"></div>
+        </div>
+
+        {/* Info Cards Grid */}
+        <div className="info-cards-grid">
+          {/* Personal Info Card */}
+          <div className="info-card bg-yellow">
+            <div className="info-icon">👩‍💻</div>
+            <h3>Portfolio of Jovana</h3>
+            <p>A full-stack developer based in Sydney, Australia.</p>
+          </div>
+
+          {/* Web Dev Card */}
+          <div className="info-card bg-yellow">
+            <div className="info-icon">💻</div>
+            <h3>Web Design & Dev</h3>
+            <p>
+              Cleanly designed, conversion-focused, and built for easy updates.
+            </p>
+          </div>
+
+          {/* UI/UX Card */}
+          <div className="info-card bg-yellow">
+            <div className="info-icon">🎨</div>
+            <h3>Full Stack Development</h3>
+            <p>Seamless web applications designed to wow your users.</p>
+          </div>
         </div>
       </div>
     </div>
