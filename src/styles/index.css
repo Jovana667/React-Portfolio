@@ -504,6 +504,144 @@ nav {
   transform: translateY(-2px);
 }
 
+/* Contact Form Container */
+.contact-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #fff5e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  background-color: #ff9f7c;
+  border-radius: 24px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2a363b;
+  margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+  font-size: 1.1rem;
+  color: #2a363b;
+  margin-bottom: 2rem;
+}
+
+/* Form Elements */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2a363b;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 12px;
+  border: none;
+  background-color: #ffe566;
+  color: #2a363b;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  background-color: #ffd700;
+  box-shadow: 0 0 0 2px rgba(42, 54, 59, 0.1);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #ffe566;
+  color: #2a363b;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+/* Notification Styles */
+.notification {
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.notification.success {
+  background-color: #4ade80;
+  color: #064e3b;
+}
+
+.notification.error {
+  background-color: #f87171;
+  color: #7f1d1d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-content {
+    padding: 2rem;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 1rem;
+  }
+
+  .contact-content {
+    padding: 1.5rem;
+  }
+}
 /* Media Queries */
 @media (max-width: 768px) {
   nav {
