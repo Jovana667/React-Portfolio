@@ -10,37 +10,42 @@ const Contact = () => {
     message: "",
   });
 
-  const sendEmail = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
     setStatus({ submitting: true, error: false, message: "" });
 
-    try {
-      const result = await emailjs.sendForm(
+    emailjs
+      .send(
         "service_i063mzb",
         "template_vj0woe1",
-        form.current,
         {
-          publicKey: "YS3Z5UkUJM_ZitL7dy",
+          user_name: form.current.user_name.value,
+          user_email: form.current.user_email.value,
+          message: form.current.message.value,
+        },
+        "S3Z5UkUJM_ZitL7dy" // Updated public key
+      )
+      .then(
+        (result) => {
+          console.log("SUCCESS!", result.text);
+          setStatus({
+            submitting: false,
+            submitted: true,
+            error: false,
+            message: "Message sent successfully!",
+          });
+          form.current.reset();
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          setStatus({
+            submitting: false,
+            submitted: false,
+            error: true,
+            message: error.text || "Failed to send message. Please try again.",
+          });
         }
       );
-
-      console.log("SUCCESS!", result.text);
-      setStatus({
-        submitting: false,
-        submitted: true,
-        error: false,
-        message: "Message sent successfully!",
-      });
-      form.current.reset();
-    } catch (error) {
-      console.error("FAILED...", error);
-      setStatus({
-        submitting: false,
-        submitted: false,
-        error: true,
-        message: "Failed to send message. Please try again.",
-      });
-    }
   };
 
   return (
@@ -74,7 +79,7 @@ const Contact = () => {
             <input
               type="text"
               id="user_name"
-              name="user_name" // Matches template variable {{user_name}}
+              name="user_name"
               className="form-input"
               disabled={status.submitting}
               required
@@ -88,7 +93,7 @@ const Contact = () => {
             <input
               type="email"
               id="user_email"
-              name="user_email" // Matches template variable {{user_email}}
+              name="user_email"
               className="form-input"
               disabled={status.submitting}
               required
@@ -101,7 +106,7 @@ const Contact = () => {
             </label>
             <textarea
               id="message"
-              name="message" // Matches template variable {{message}}
+              name="message"
               className="form-textarea"
               disabled={status.submitting}
               required
