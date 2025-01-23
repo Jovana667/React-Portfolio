@@ -24,7 +24,7 @@ const Portfolio = () => {
       description:
         "A React-based search application that allows users to search and filter through student data, featuring integration with multiple data sources and real-time updates.",
       technologies: "React, JavaScript, APIs",
-      image: "/images/student-search-engine.png",
+      image: "/images/brandbird.png",
       githubLink: "https://github.com/Jovana667/student-search-engine",
     },
     {
