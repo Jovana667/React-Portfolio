@@ -24,7 +24,7 @@ const Portfolio = () => {
       description:
         "A React-based search application that allows users to search and filter through student data, featuring integration with multiple data sources and real-time updates.",
       technologies: "React, JavaScript, APIs",
-      image: "/images/brandbird.png",
+      image: "/images/searchengine.png",
       githubLink: "https://github.com/Jovana667/student-search-engine",
     },
     {
@@ -32,7 +32,7 @@ const Portfolio = () => {
       description:
         "An interactive weather application providing real-time weather data and forecasts for cities worldwide. Features include dynamic updates and search history.",
       technologies: "JavaScript, Weather API, Local Storage",
-      image: "/images/Weather-Dashboard.png",
+      image: "/images/weatherdash.png",
       githubLink: "https://github.com/Jovana667/Weather-Dashboard",
     },
   ];
