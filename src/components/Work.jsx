@@ -4,20 +4,22 @@ import { Github, ExternalLink } from "lucide-react";
 const Portfolio = () => {
   const projects = [
     {
-      title: "Employee Payroll Tracker",
+      title: "Paw Kingdom",
       description:
-        "A comprehensive payroll management system for tracking employee salaries and generating financial reports. Features include data visualization, salary calculations, and employee management interface.",
-      technologies: "JavaScript, HTML, CSS, Local Storage",
-      image: "/images/Employee-Payroll-Tracker.png",
-      githubLink: "https://github.com/Jovana667/Employee-Payroll-Tracker",
+        "A modern e-commerce platform for pet supplies featuring an intuitive interface for dogs and cats products. Implements secure user authentication, shopping cart functionality, and a comprehensive product catalog with search capabilities.",
+      technologies:
+        "React.js, Node.js, Express.js, MongoDB, GraphQL, Apollo Client, Bootstrap",
+      image: "/images/pawkingdom.png",
+      githubLink: "https://github.com/your-username/paw-kingdom",
     },
     {
-      title: "Task Board Management",
+      title: "TripTell",
       description:
-        "A Kanban-style task management application allowing users to organize and track tasks through different stages of completion. Implements drag-and-drop functionality and local storage.",
-      technologies: "JavaScript, DOM Manipulation, Local Storage",
-      image: "/images/Task-Board-Management-Tool.png",
-      githubLink: "https://github.com/Jovana667/Task-Board-Management-Tool",
+        "A community-driven travel blog platform where users can share experiences, discover destinations, and engage with other travelers through likes and ratings. Features user authentication, dynamic content loading, and responsive design.",
+      technologies:
+        "Node.js, Express.js, PostgreSQL, Sequelize ORM, Handlebars.js, Bootstrap",
+      image: "/images/triptell.png",
+      githubLink: "https://github.com/BenJR546/TripTell",
     },
     {
       title: "Student Search Engine",
