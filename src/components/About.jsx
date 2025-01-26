@@ -41,7 +41,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="skill-item">
+            <div className="skill-item2">
               <h2>Clean Code Advocate</h2>
               <p>Writing maintainable, efficient, and well-documented code.</p>
             </div>
