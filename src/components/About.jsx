@@ -28,7 +28,7 @@ const About = () => {
               className="get-in-touch"
             >
               Get in Touch
-            </button>{" "}
+            </button>
           </p>
 
           {/* Skills Section */}
@@ -66,7 +66,7 @@ const About = () => {
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
             <a
-              href="/your-resume.pdf"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon resume"
