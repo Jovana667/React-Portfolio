@@ -95,18 +95,21 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 2.5rem;
+  display: flex;
+  gap: 2rem;
 }
 
 /* Main Hero Card */
 .main-hero-card {
   border-radius: 2rem;
-  padding: 2rem;
   position: relative;
   overflow: hidden;
-  margin-bottom: 2rem; /* Reduced from 3rem */
-  max-width: 900px; /* Reduced from 1000px */
-  margin-left: auto;
-  margin-right: auto;
+  flex: 4; /* Increased from 3 to take up more width */
+  height: 600px;
+  min-height: 500px; /* Add minimum height to make it taller */
+  padding: 2rem; /* Increased padding */
+  margin-bottom: 0;
+  max-width: 900px;
 }
 
 .card-content {
@@ -163,17 +166,29 @@ nav {
 
 /* Info Cards Grid */
 .info-cards-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 1rem;
+  flex: 1.5; /* Reduced from 2 to make cards narrower */
+  display: flex;
+  flex-direction: column;
+  max-width: 300px; /* Add maximum width to control card size */
 }
 
 .info-card {
   background-color: #ffc857;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1.5rem;
   text-align: left;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .info-cards-grid {
+    max-width: 100%;
+  }
 }
 
 .info-card:hover {
