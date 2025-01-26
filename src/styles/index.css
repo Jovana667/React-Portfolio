@@ -564,13 +564,12 @@ nav {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background-color: #fff5e6;
   padding: 0 1rem 1rem 1rem; /* Added bottom padding */
   margin-top: -100px;
 }
 
 .contact-content {
-  width: 100%;
+  width: 950px;
   background-color: #ff9f7c;
   border-radius: 32px 32px 0 0;
   padding: 2rem;
@@ -633,13 +632,15 @@ nav {
 }
 /* Submit Button */
 .submit-button {
-  width: 100%;
+  width: 300px;
   background-color: #ffe566;
   color: #2a363b;
   padding: 0.75rem;
   border: none;
   border-radius: 16px;
   font-weight: 500;
+  display: block; /* Add this */
+  margin: 0 auto; /* Add this */
 }
 
 .submit-button:hover {
