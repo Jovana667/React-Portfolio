@@ -66,7 +66,7 @@ const About = () => {
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
             <a
-              href="/resume.pdf"
+              href="/Jovanaresume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon resume"
