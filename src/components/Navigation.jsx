@@ -8,30 +8,32 @@ const Navigation = () => {
 
   return (
     <nav>
-      <div className="nav-container">
+      <div className="nav-home">
         <button
           onClick={() => scrollToSection("home")}
+          className="nav-button home"
+        >
+          Jovana Vukovic
+        </button>
+      </div>
+      <div className="nav-container">
+        <button
+          onClick={() => scrollToSection("languages")}
           className="nav-button meet"
         >
-          Home
+          Languages
         </button>
         <button
-          onClick={() => scrollToSection("about")}
-          className="nav-button about"
-        >
-          Meet Jovana
-        </button>
-        <button
-          onClick={() => scrollToSection("work")}
+          onClick={() => scrollToSection("projects")}
           className="nav-button work"
         >
-          Work
+          Projects
         </button>
         <button
           onClick={() => scrollToSection("contact")}
           className="nav-button contact"
         >
-          Get in Touch
+          Contact
         </button>
       </div>
     </nav>
