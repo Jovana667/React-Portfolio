@@ -5,6 +5,7 @@ import Languages from "./components/Languages";
 import Work from "./components/Work";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
+import './styles/App.css'
 
 function App() {
   return (
