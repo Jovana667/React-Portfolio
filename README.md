@@ -27,7 +27,6 @@ A modern, responsive portfolio website built with React and Vite, showcasing my 
 - CSS3
 - HTML5
 - JavaScript
-- Netlify (Deployment)
 
 ## Installation
 To run this portfolio locally:
@@ -52,8 +51,7 @@ The portfolio is organized into four sections:
 - **Resume**: Downloadable resume and list of my proficiencies
 
 ## Screenshots
-![1 (1)](https://github.com/user-attachments/assets/d23a6049-0f30-48af-9f64-89d1b8d0b668)
-![1 (2)](https://github.com/user-attachments/assets/9c5ee2b3-3dd7-49bc-b173-844049fcbde2)
+
 
 ## Deployed Application
 View the live application: https://jovanareactportfolio.netlify.app
