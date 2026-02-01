@@ -42,13 +42,28 @@ const Languages = () => {
           />
           <span className="language-name">Typescript</span>
         </div>
-
-        <div className="language-item">React.js</div>
-        <div className="language-item">Node.js</div>
-        <div className="language-item">Express.js</div>
-        <div className="language-item">MongoDB</div>
-        <div className="language-item">SQL</div>
-        <div className="language-item">Git & GitHub</div>
+        <div className="language-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+            alt="React.js"
+          />
+          <span className="language-name">React.js</span>
+        </div>
+        <div className="language-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+            alt="Node.js"
+          />
+          <span className="language-name">Node.js</span>
+        </div>
+        <div className="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+            <span className="language-name">PostgreSQL</span>
+        </div>
+        <div className="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+            <span className="language-name">Amazon Web Services (AWS)</span>
+        </div>
       </div>
     </div>
   );
